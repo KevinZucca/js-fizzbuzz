@@ -10,10 +10,10 @@
    :ALTRIMENTI non succede nulla e l'elemento contiene il suo numero
 */
 
-let containerEl = document.getElementById('container');
+let containerEl = document.getElementById('fizz_container');
 
 for (let i = 1; i <= 100; i++) {
-    let newEl = document.createElement('div');
+    let newEl = document.createElement('col');
     containerEl.appendChild(newEl);
     newEl.innerHTML = i;
 
@@ -27,6 +27,7 @@ for (let i = 1; i <= 100; i++) {
     newEl.style.color = 'white';
     newEl.style.maxWidth = '100px';
     newEl.style.fontWeight = 'bold';
+
 
 
 
