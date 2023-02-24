@@ -14,19 +14,35 @@ let containerEl = document.getElementById('container');
 
 for (let i = 1; i <= 100; i++) {
     let newEl = document.createElement('div');
-    newEl.innerHTML = i;
     containerEl.appendChild(newEl);
-    console.log(newEl.innerHTML);
+    newEl.innerHTML = i;
+
+
+    newEl.style.display = 'flex';
+    newEl.style.justifyContent = 'center';
+    newEl.style.padding = '20px';
+    newEl.style.margin = '10px';
+    newEl.style.border = '2px solid black';
+    newEl.style.borderRadius = '15%';
+    newEl.style.color = 'white';
+    newEl.style.maxWidth = '100px';
+    newEl.style.fontWeight = 'bold';
+
+
+
 
     if (i % 3 == 0 && i % 5 == 0 ) {
         newEl.innerHTML = 'Fizzbuzz';
-        console.log(newEl.innerHTML);
+        newEl.style.backgroundColor = '#ffd166';
+
     } else if (i % 3 == 0) {
         newEl.innerHTML = 'Fizz';
-        console.log(newEl.innerHTML);
+        newEl.style.backgroundColor = '#0cd6a1';
     } else if (i % 5 == 0 ) {
         newEl.innerHTML = "Buzz";
-        console.log(newEl.innerHTML);
+        newEl.style.backgroundColor = '#f0466f';
     }
+
+    console.log(newEl.innerHTML);
 
 }
