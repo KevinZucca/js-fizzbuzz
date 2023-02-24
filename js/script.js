@@ -17,4 +17,16 @@ for (let i = 1; i <= 100; i++) {
     newEl.innerHTML = i;
     containerEl.appendChild(newEl);
     console.log(newEl.innerHTML);
+
+    if (i % 3 == 0 && i % 5 == 0 ) {
+        newEl.innerHTML = 'Fizzbuzz';
+        console.log(newEl.innerHTML);
+    } else if (i % 3 == 0) {
+        newEl.innerHTML = 'Fizz';
+        console.log(newEl.innerHTML);
+    } else if (i % 5 == 0 ) {
+        newEl.innerHTML = "Buzz";
+        console.log(newEl.innerHTML);
+    }
+
 }
