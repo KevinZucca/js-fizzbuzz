@@ -3,6 +3,8 @@
    -Creare un ciclo che generi un numero a partire da 1 fino a 100
    -All'interno del ciclo creare un nuovo elemento che sarà legato al padre contenitore
    -Dare un contenuto al nuovo elemento 
+   -Stilizzare il contenuto del nuovo elemento
+
    
    ?SE l'elemento ha un valore multiplo di 3 conterrà la scritta "Fizz"
    ?SE ALTRIMENTI l'elemento ha un valore multiplo di 5 conterrà la scritta "Buzz"
@@ -29,13 +31,12 @@ for (let i = 1; i <= 100; i++) {
     newEl.style.fontWeight = 'bold';
 
 
-
+    
 
 
     if (i % 3 == 0 && i % 5 == 0 ) {
         newEl.innerHTML = 'Fizzbuzz';
         newEl.style.backgroundColor = '#ffd166';
-
     } else if (i % 3 == 0) {
         newEl.innerHTML = 'Fizz';
         newEl.style.backgroundColor = '#0cd6a1';
@@ -44,6 +45,6 @@ for (let i = 1; i <= 100; i++) {
         newEl.style.backgroundColor = '#f0466f';
     }
 
-    console.log(newEl.innerHTML);
+    console.log(newEl.innerText);
 
 }
